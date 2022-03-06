@@ -5,7 +5,7 @@ This is an API-based Django app built using Django Rest Framework. You can regis
 ## API Schema and requirements to consume the API is available on http://127.0.0.1:8000/docs/
 
 
-### Logic to be implemented:
+### Logic implemented:
 1. Create a new user via API.
 2. Create/Update a new bank account via API
 3. Bank account to be one of either SAVINGS, or CREDIT
@@ -30,11 +30,11 @@ cd Desktop
 ```
 2. Create new folder/directory
 ```
-mkdir hackernews
+mkdir bankproject
 ```
 3. Navigate into this new folder
 ```
-cd hackernews
+cd bankproject
 ```
 4. Create new Python Virtual environment
 ```
@@ -46,11 +46,11 @@ source venv/bin/activate
 ```
 6. Clone this git repo
 ```
-git clone https://github.com/Jaye-python/hackernewsapi.git
+git clone https://github.com/Jaye-python/Python-Django-Bank-Application.git
 ```
-7. Move into the hackernewsapi folder 
+7. Move into the bankapp folder 
 ```
-cd hackernewsapi
+cd bankapp
 ```
 8. Install dependencies
 ```
@@ -60,12 +60,25 @@ pip install -r requirements.txt
 ```
 python manage.py runserver
 ```
-10. To run the Celery workers used to seed the DB (Celery must have been installed and started)
+10. OPEN A NEW TERMINAL while server is running and run custom management command below to create 5 new user accounts
 ```
-celery -A hackernews worker -l info
+python manage.py create_users
 ```
-11. To run the Celery Beat workers to sync the DB every 5 minutes
+11. In this same terminal, run custom management commands below to create bank accounts for these new users (while server is still running)
 ```
-celery -A hackernews beat -l info
+python manage.py create_savings_accounts
+python manage.py create_credit_accounts
 ```
-
+12. In this same terminal, run custom management command below to make deposits into the bank accounts for these new users (while server is still running)
+```
+python manage.py make_deposit
+```
+13. In this same terminal, run custom management command below to make withdrawals from the bank accounts of these new users (while server is still running)
+```
+python manage.py make_withdrawal
+```
+14. In this same terminal, run custom management command below to run tests (while server is still running)
+```
+python manage.py test
+```
+15. To check the API documentation, visit http://127.0.0.1:8000/docs/
