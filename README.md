@@ -1,10 +1,6 @@
 # Python-Django-Bank-Application
 This is an API-based Django app built using Django Rest Framework. You can register a new user, create bank accounts, make deposists and withdrawals and view your transactions using API endpoints.
 
-# Python Django Bank App
-## API Schema and requirements to consume the API is available on http://127.0.0.1:8000/docs/
-
-
 ### Logic implemented:
 1. Create a new user via API.
 2. Create/Update a new bank account via API
