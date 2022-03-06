@@ -56,7 +56,7 @@ cd Python-Django-Bank-Application
 ```
 pip install -r requirements.txt
 ```
-9. Make migrations
+9. Make migrations (this will auto-create an sqlite3 database for this app. You may interact with the database if you wish)
 ```
 python manage.py makemigrations
 ```
