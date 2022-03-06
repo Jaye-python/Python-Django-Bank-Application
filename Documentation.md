@@ -6,6 +6,7 @@ There are 3 models:
 4. When creating bank accounts, `User ID` must be provided so it will link back to an existing user
 5. When creating a transaction, the `User ID` and `Bank Account ID` must be provided. These two parameters will be used to check if there is a bank account on record before any transaction will be allowed
 
+
 ## Create a new user via API
 1. To create new users, you must specify `email`, `first_name`, `last_name` and `password`. You need `email` and `password` to login
 2. To create new users via API using curl command, run
