@@ -1,5 +1,6 @@
-##Create a new user via API
-1. To create new users via API using curl command, run
+## Create a new user via API
+1. To create new users, you must specify `email`, `first_name`, `last_name` and `password`. You need `email` and `password` to login
+2. To create new users via API using curl command, run
 ```
 curl --data "email=newuser@pp.com&first_name=newuserfirstname&last_name=newuserfirstname&password=1234" http://127.0.0.1:8000/register/
 ```
