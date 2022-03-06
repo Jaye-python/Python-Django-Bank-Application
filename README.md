@@ -48,9 +48,9 @@ source venv/bin/activate
 ```
 git clone https://github.com/Jaye-python/Python-Django-Bank-Application.git
 ```
-7. Move into the bankapp folder 
+7. Move into the Python-Django-Bank-Application folder 
 ```
-cd bankapp
+cd Python-Django-Bank-Application
 ```
 8. Install dependencies
 ```
