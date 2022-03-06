@@ -18,11 +18,15 @@ curl --data "email=newuser@pp.com&first_name=newuserfirstname&last_name=newuserf
 2. `account_type` must be either `savings` or `credit`
 3. `credit` accounts can have negative values up to a limit of 20,000.00
 4. `savings` accounts must always have a positive value of 50.00 or more
-5. Curl command example:
+5. `Create bank account` curl command example:
 ```
 curl --data "account_type=credit&user=1" http://127.0.0.1:8000/createbankaccountapi/
+```
+6. `Update bank account` curl command example (Only account type can be updated via API, `account balance` have to be updated via a transaction in order to have proper records):
+```
 curl -X PUT -d "account_type=savings&user=11" http://127.0.0.1:8000/bankaccountupdate/1/
 ```
+
 ## Make deposits and withdrawals via API
 1. To make deposits into an account, you must specify the `id` of an existing user, `id` of an existing bank account, `transaction_type` and `transaction_amount`
 2. The two `id`s will be checked to see if they march an existing bank account or there will be an error raised
