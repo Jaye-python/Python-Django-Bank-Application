@@ -68,34 +68,37 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-10. OPEN A NEW TERMINAL while server is still running and navigate back to the 'bankproject' folder. ENSURE YOU ARE IN THE 'bankproject' FOLDER
+12. OPEN A NEW TERMINAL while server is still running and navigate back to the 'bankproject' folder. ENSURE YOU ARE IN THE 'bankproject' FOLDER
 ```
 cd ..
 ```
-11. Now activate the virtual environment created above in No. 4 for this new terminal
+13. Now activate the virtual environment created above in No. 4 for this new terminal
 ```
 source venv/bin/activate
 ```
-
-10. OPEN A NEW TERMINAL while server is running and run custom management command below to create 5 new user accounts
+14. . Move back into the Python-Django-Bank-Application folder 
+```
+cd Python-Django-Bank-Application
+```
+15. In this same new terminal, run custom management command below to create 5 new user accounts (while server is still running)
 ```
 python manage.py create_users
 ```
-11. In this same terminal, run custom management commands below to create bank accounts for these new users (while server is still running)
+16. In this same new terminal, run custom management commands below (one after the other) to create bank accounts for these new users (while server is still running)
 ```
 python manage.py create_savings_accounts
 python manage.py create_credit_accounts
 ```
-12. In this same terminal, run custom management command below to make deposits into the bank accounts for these new users (while server is still running)
+17. In this same terminal, run custom management command below to make deposits into the bank accounts for these new users (while server is still running)
 ```
 python manage.py make_deposit
 ```
-13. In this same terminal, run custom management command below to make withdrawals from the bank accounts of these new users (while server is still running)
+18. In this same terminal, run custom management command below to make withdrawals from the bank accounts of these new users (while server is still running)
 ```
 python manage.py make_withdrawal
 ```
-14. In this same terminal, run custom management command below to run tests (while server is still running)
+19. In this same terminal, run custom management command below to run tests (while server is still running)
 ```
 python manage.py test
 ```
-15. To check the API documentation, visit http://127.0.0.1:8000/docs/
+20. To check the API documentation, visit http://127.0.0.1:8000/docs/
