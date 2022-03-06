@@ -1,3 +1,11 @@
+# Architecture
+There are 3 models:
+1. `CustomUser` model to create and manage users
+2. `BankAccount` model for bank account details. Fields are : `Account Type` which has two options: `savings` & `credit`; `Account Balance` and a foreign key field to `CustomUser` model `User`. When deposits and withdrawals are made, the `Account Balance` is updated with latest balance after calculations
+3. `Transaction` model with details of transactions carried out and the type of transaction: `deposit` or `withdrawal`. This model has foreign key relationship to both `CustomUser` and `BankAccount` models
+4. When creating bank accounts, `User ID` must be provided so it will link bank to an existing user
+5. When creating a transaction, the `User ID` and `Bank Account ID` must be provided. These two parameters will be used to check if there is a bank account on record before any transaction will be allowed
+
 ## Create a new user via API
 1. To create new users, you must specify `email`, `first_name`, `last_name` and `password`. You need `email` and `password` to login
 2. To create new users via API using curl command, run
