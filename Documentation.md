@@ -13,16 +13,42 @@ curl --data "email=newuser@pp.com&first_name=newuserfirstname&last_name=newuserf
 ```
 curl --data "account_type=credit&user=1" http://127.0.0.1:8000/createbankaccountapi/
 ```
-## Make deposits via API
+## Make deposits and withdrawals via API
 1. To make deposits into an account, you must specify the `id` of an existing user, `id` of an existing bank account, `transaction_type` and `transaction_amount`
 2. The two `id`s will be checked to see if they march an existing bank account or there will be an error raised
-3. Curl command to create a deposit of 100 into savings account 1 owned by user with id 1
+3. `transaction_type` can either be `deposit` or `withdrawal`
+4. Curl command to create a deposit of 10000 into an account with id 1 owned by user with id 1
 ```
 curl --data "transaction_type=deposit&transaction_amount=10000&account_type=1&user=1" http://127.0.0.1:8000/createtransactionapi/
 ```
-Make withdrawals via API
-All transactions need to be persisted.
-One user can have multiple accounts of all types.
-Implement an API endpoint that shows all accounts, balances, and the last 10 transactions, for the logged in USER.
-Implement an Administrator view that can see accounts, balances, transactions for a specific user (by user ID).
-Implement a simple report (CSV Download) that contains: a. All accounts b. Associated balances c. Associated Users
+5. Curl command to make a withdrawal of 500 from an account with id 6 owned by user with id 1
+```
+curl --data "transaction_type=withdrawal&transaction_amount=500&account_type=6&user=1" http://127.0.0.1:8000/createtransactionapi/
+```
+## All transactions are persisted with an sqlite3 db which is auto-created after running migrations
+## Implement an API endpoint that shows all accounts, balances, and the last 10 transactions, for the logged in USER
+1. `email` and `password` are required to login
+2. URL to login
+```
+http://127.0.0.1:8000/viewuseraccount/
+```
+3. See bank account drill down
+```
+http://127.0.0.1:8000/viewbankaccountuser/
+```
+## Implement an Administrator view that can see accounts, balances, transactions for a specific user (by user ID)
+1. Below URL shows info for user with id 1
+```
+http://127.0.0.1:8000/adminviewuser/1/
+```
+2. Django admin url has also been configured for this purpose
+```
+http://127.0.0.1:8000/admin/
+```
+
+## Implement a simple report (CSV Download) that contains: a. All accounts b. Associated balances c. Associated Users
+1. Download reports from url:
+```
+http://127.0.0.1:8000/downloadbankaccounts/
+```
+
