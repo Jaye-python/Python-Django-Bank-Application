@@ -181,8 +181,8 @@ class ViewBankAccountUser(generics.ListAPIView):
 
 def downloadBankAccounts(request):
     '''
-    VIEW ACCOUNT INFO FOR LOGGED IN USER
-    http://127.0.0.1:8000/viewbankaccountuser/
+    DOWNLOAD ACCOUNT INFO FOR ALL USERS
+    http://127.0.0.1:8000/downloadbankaccounts/
     
     '''
        
