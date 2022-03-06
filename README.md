@@ -68,6 +68,15 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
+10. OPEN A NEW TERMINAL while server is still running and navigate back to the 'bankproject' folder. ENSURE YOU ARE IN THE 'bankproject' FOLDER
+```
+cd ..
+```
+11. Now activate the virtual environment created above in No. 4 for this new terminal
+```
+source venv/bin/activate
+```
+
 10. OPEN A NEW TERMINAL while server is running and run custom management command below to create 5 new user accounts
 ```
 python manage.py create_users
