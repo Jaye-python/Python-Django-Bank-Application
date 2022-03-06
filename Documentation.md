@@ -21,6 +21,7 @@ curl --data "email=newuser@pp.com&first_name=newuserfirstname&last_name=newuserf
 5. Curl command example:
 ```
 curl --data "account_type=credit&user=1" http://127.0.0.1:8000/createbankaccountapi/
+curl -X PUT -d "account_type=savings&user=11" http://127.0.0.1:8000/bankaccountupdate/1/
 ```
 ## Make deposits and withdrawals via API
 1. To make deposits into an account, you must specify the `id` of an existing user, `id` of an existing bank account, `transaction_type` and `transaction_amount`
