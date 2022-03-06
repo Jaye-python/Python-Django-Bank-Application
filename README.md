@@ -97,4 +97,8 @@ python manage.py make_withdrawal
 ```
 python manage.py test
 ```
-20. To check the API documentation, visit http://127.0.0.1:8000/docs/
+20. In this same terminal, create superuser account
+```
+python manage.py createsuperuser
+```
+21. To check the API documentation, visit http://127.0.0.1:8000/docs/
