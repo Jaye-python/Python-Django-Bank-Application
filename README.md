@@ -56,7 +56,15 @@ cd Python-Django-Bank-Application
 ```
 pip install -r requirements.txt
 ```
-9. Launch
+9. Make migrations
+```
+python manage.py makemigrations
+```
+10. Migrate
+```
+python manage.py migrate
+```
+11. Launch
 ```
 python manage.py runserver
 ```
