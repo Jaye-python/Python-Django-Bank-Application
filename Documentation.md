@@ -52,3 +52,4 @@ http://127.0.0.1:8000/admin/
 http://127.0.0.1:8000/downloadbankaccounts/
 ```
 
+#### To check the API documentation, visit http://127.0.0.1:8000/docs/
