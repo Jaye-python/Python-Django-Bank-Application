@@ -9,15 +9,15 @@ This is an API-based Django app built using Django Rest Framework. You can regis
 1. Create a new user via API.
 2. Create/Update a new bank account via API
 3. Bank account to be one of either SAVINGS, or CREDIT
-  CREDIT account can have negative values up to a limit of 20,000.00.
-  SAVINGS account to always have a positive value of 50.00 or more.
-4. Make deposits via API
-5. Make withdrawals via API
-6. All transactions need to be persisted.
-7. One user can have multiple accounts of all types.
-8. Implement an API endpoint that shows all accounts, balances, and the last 10 transactions, for the logged in USER.
-9. Implement an Administrator view that can see accounts, balances, transactions for a specific user (by user ID).
-10. Implement a simple report (CSV Download) that contains:
+4. CREDIT account can have negative values up to a limit of 20,000.00.
+5. SAVINGS account to always have a positive value of 50.00 or more.
+6. Make deposits via API
+7. Make withdrawals via API
+8. All transactions need to be persisted.
+9. One user can have multiple accounts of all types.
+10. Implement an API endpoint that shows all accounts, balances, and the last 10 transactions, for the logged in USER.
+11. Implement an Administrator view that can see accounts, balances, transactions for a specific user (by user ID).
+12. Implement a simple report (CSV Download) that contains:
   a. All accounts
   b. Associated balances
   c. Associated Users
