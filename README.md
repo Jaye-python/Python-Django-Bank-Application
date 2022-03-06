@@ -102,3 +102,5 @@ python manage.py test
 python manage.py createsuperuser
 ```
 21. To check the API documentation, visit http://127.0.0.1:8000/docs/
+22. See documentation in the `Documentation.md` file included in this repo
+
