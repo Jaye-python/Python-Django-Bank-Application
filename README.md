@@ -86,6 +86,8 @@ python manage.py create_users
 16. In this same new terminal, run custom management commands below (one after the other) to create bank accounts for these new users (while server is still running)
 ```
 python manage.py create_savings_accounts
+```
+```
 python manage.py create_credit_accounts
 ```
 17. In this same terminal, run custom management command below to make deposits into the bank accounts for these new users (while server is still running)
