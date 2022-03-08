@@ -27,19 +27,27 @@ This is an API-based Django app built using Django Rest Framework. You can regis
 ```
 cd Desktop
 ```
-2. Create new Python Virtual environment
+2. Create a new folder/directory called `bankproject`
 ```
-python3 -m venv ./venv
+mkdir bankproject
 ```
-3. Activate this new virtual environment
+3. Navigate into this new folder
+```
+cd bankproject
+```
+4. Create a new Python Virtual environment in the `bankproject` folder **please notice the trailing point**
+```
+python3 -m venv ./venv .
+```
+5. Activate this new virtual environment
 ```
 source venv/bin/activate
 ```
-4. Clone this git repo
+6. Clone this git repo
 ```
 git clone https://github.com/Jaye-python/Python-Django-Bank-Application.git
 ```
-5. Move into the Python-Django-Bank-Application folder 
+7. Move into the Python-Django-Bank-Application folder 
 ```
 cd Python-Django-Bank-Application
 ```
