@@ -35,7 +35,7 @@ mkdir bankproject
 ```
 cd bankproject
 ```
-4. Create a new Python Virtual environment in the `bankproject` folder **please notice the trailing point**
+4. Create a new Python Virtual environment in the `bankproject` folder. **Please notice the trailing point**
 ```
 python3 -m venv ./venv .
 ```
