@@ -47,7 +47,7 @@ source venv/bin/activate
 ```
 git clone https://github.com/Jaye-python/Python-Django-Bank-Application.git
 ```
-7. Move into the Python-Django-Bank-Application folder 
+7. Move into the `Python-Django-Bank-Application` folder 
 ```
 cd Python-Django-Bank-Application
 ```
@@ -75,7 +75,7 @@ cd ..
 ```
 source venv/bin/activate
 ```
-14. . Move back into the Python-Django-Bank-Application folder 
+14. . Move back into the `Python-Django-Bank-Application` folder 
 ```
 cd Python-Django-Bank-Application
 ```
