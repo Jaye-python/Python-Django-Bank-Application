@@ -27,83 +27,75 @@ This is an API-based Django app built using Django Rest Framework. You can regis
 ```
 cd Desktop
 ```
-2. Create new folder/directory
-```
-mkdir bankproject
-```
-3. Navigate into this new folder
-```
-cd bankproject
-```
-4. Create new Python Virtual environment
+2. Create new Python Virtual environment
 ```
 python3 -m venv ./venv
 ```
-5. Activate this new virtual environment
+3. Activate this new virtual environment
 ```
 source venv/bin/activate
 ```
-6. Clone this git repo
+4. Clone this git repo
 ```
 git clone https://github.com/Jaye-python/Python-Django-Bank-Application.git
 ```
-7. Move into the Python-Django-Bank-Application folder 
+5. Move into the Python-Django-Bank-Application folder 
 ```
 cd Python-Django-Bank-Application
 ```
-8. Install dependencies
+6. Install dependencies
 ```
 pip install -r requirements.txt
 ```
-9. Make migrations (this will auto-create an sqlite3 database for this app. You may interact with the database if you wish)
+7. Make migrations (this will auto-create an sqlite3 database for this app. You may interact with the database if you wish)
 ```
 python manage.py makemigrations
 ```
-10. Migrate
+8. Migrate
 ```
 python manage.py migrate
 ```
-11. Launch
+9. Launch
 ```
 python manage.py runserver
 ```
-12. **Open a new terminal while server is still running** and navigate back to the virtual environment created in No. 4 in this new terminal
+10. **Open a new terminal while server is still running** and navigate back to the virtual environment created in No. 2 (in this new terminal)
 ```
 cd ..
 ```
-13. Now activate the virtual environment created in No. 4 in this new terminal
+11. Now activate the virtual environment created in No. 2 in this new terminal
 ```
 source venv/bin/activate
 ```
-14. . Move back into the Python-Django-Bank-Application folder 
+12. . Move back into the Python-Django-Bank-Application folder 
 ```
 cd Python-Django-Bank-Application
 ```
-15. In this same new terminal, run custom management command below to create 5 new user accounts (while server is still running)
+13. In this same new terminal, run custom management command below to create 5 new user accounts (while server is still running)
 ```
 python manage.py create_users
 ```
-16. In this same new terminal, run custom management commands below (one after the other) to create bank accounts for these new users (while server is still running)
+14. In this same new terminal, run custom management commands below (one after the other) to create bank accounts for these new users (while server is still running)
 ```
 python manage.py create_savings_accounts
 python manage.py create_credit_accounts
 ```
-17. In this same terminal, run custom management command below to make deposits into the bank accounts for these new users (while server is still running)
+15. In this same terminal, run custom management command below to make deposits into the bank accounts for these new users (while server is still running)
 ```
 python manage.py make_deposit
 ```
-18. In this same terminal, run custom management command below to make withdrawals from the bank accounts of these new users (while server is still running)
+16. In this same terminal, run custom management command below to make withdrawals from the bank accounts of these new users (while server is still running)
 ```
 python manage.py make_withdrawal
 ```
-19. In this same terminal, run custom management command below to run tests (while server is still running)
+17. In this same terminal, run custom management command below to run tests (while server is still running)
 ```
 python manage.py test
 ```
-20. In this same terminal, create superuser account
+18. In this same terminal, create superuser account
 ```
 python manage.py createsuperuser
 ```
-21. To check the API documentation, visit http://127.0.0.1:8000/docs/
-22. See documentation in the `Documentation.md` file included in this repo
+19. To check the API documentation, visit http://127.0.0.1:8000/docs/
+20. See documentation in the `Documentation.md` file included in this repo
 
