@@ -67,11 +67,11 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-12. OPEN A NEW TERMINAL while server is still running and navigate back to the 'bankproject' folder. ENSURE YOU ARE IN THE 'bankproject' FOLDER
+12. **Open a new terminal while server is still running** and navigate back to the virtual environment created in No. 4 in this new terminal
 ```
 cd ..
 ```
-13. Now activate the virtual environment created above in No. 4 for this new terminal
+13. Now activate the virtual environment created in No. 4 in this new terminal
 ```
 source venv/bin/activate
 ```
